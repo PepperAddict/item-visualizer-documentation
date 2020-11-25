@@ -1,28 +1,52 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Header />
+    <AddTodo v-on:add-todo="addTodo" />
+    <Todos v-bind:todosy="todos" v-on:del-todo="deleteThatTodo" />
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Todos from "./components/Todos";
+import Header from "./components/layout/Header";
+import AddTodo from "./components/AddTodo";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    HelloWorld
+    Todos,
+    Header,
+    AddTodo,
+  },
+  data() {
+    return {
+      todos: [],
+    };
+  },
+  methods: {
+    deleteThatTodo(id) {
+      this.todos = this.todos.filter((todo) => todo.id !== id);
+    },
+    addTodo(newTodo) {
+      this.todos = [...this.todos, newTodo];
+    },
+  },
+  created() {
+    fetch("https://jsonplaceholder.typicode.com/todos?_limit=10")
+      .then((res) => {
+        console.log(res)
+        return res.json()
+      })
+      .then((resp) => this.todos = resp)
+      .catch((err) => console.log(err));
+
   }
-}
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+button {
+  background: black;
+  color: white;
 }
 </style>
