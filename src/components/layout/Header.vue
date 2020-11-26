@@ -1,20 +1,20 @@
 <template>
-    <header class="header">
-        <h1>TodoList</h1>
-    </header>
+  <header class="header">
+    <router-link to="/">Home</router-link>
+
+    <router-link to="/how">How to Use</router-link>
+  </header>
 </template>
 
 <script>
 export default {
-    name: "Header"
-}
+  name: "Header",
+};
 </script>
 
 <style scoped>
-
 header {
-    background: black;
-    color: white;
-}
 
+  color: white;
+}
 </style>
