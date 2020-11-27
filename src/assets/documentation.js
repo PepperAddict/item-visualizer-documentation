@@ -256,9 +256,101 @@ export default [
       },
       section: [
           {
-              title: "Show the Video by Screen",
-              text: "Recording a video of your screen, application, or browser tab will access your microphone"
+              title: "Show the Video from Screen",
+              text: "Click on <strong>Screen</strong> to begin recording a video of your screen, application, or browser tab will access your microphone. When you stop the recording, the video will instantly playback. There will be an option to download the video only after the video finishes playing completely.",
+              video: require('./videos/recordScreen.mp4')
+          },
+          {
+              title: "Show the Video from Camera",
+              text: "Click on <strong>Camera</strong> to start recording a video using your camera. First it will ask to access your microphone and camera, please allow for it to begin recording. There will be an option to download the video only after the video finishes playing completely.",
+              video: require('./videos/recordCamera.mp4')
           }
       ]
+  },
+  {
+      topic: "The Summary",
+      id: "summary",
+      intro: {
+          text: [`This is the preview section after using any of the methods. 
+          To the left is the thumbnail image (if it's an image type) and to the right are 
+          input fields you can enter with it. If you leave it blank, it won't be included in your
+          update.`, `In the summary you can also draw on the image with the pencil button on 
+          the corner left next to the expand button.`, `If your thumbnail has been modified through our 
+          drawing canvas, you can reset back to the original by clicking on the circle arrow button.`],
+          image: require('./img/summary.jpg')
+      }
+  },
+  {
+    topic: "Edit The Image",
+    id: "summary-draw",
+    intro: {
+      text: [`Once you've clicked on the pencil button to edit the image, you will be directed to 
+      a drawing page.`, `This canvas let's you control the size and color of either a brush tool or
+      a typing tool. There is also an option to <strong>Clear</strong> the canvas, go back by clicking <strong>Cancel</strong>, and if you
+      want to save what you've done, click on <strong>Save Image</strong> at the top to generate a new thumbnail image.`],
+      image: require('./img/canvasDraw.jpg')
+    },
+    section: [
+      {
+        title: "To draw on a picture",
+        text: [`By default, the canvas starts with painting so you could immediately start drawing
+        on the canvas. You have a limited number of colors to choose from and you can adjust the 
+        size of the brush in the tool section. Once you have the image how you like it, Save the image to return to the summary section.`],
+        video: require('./videos/canvasPaint.mp4')
+      },
+      {
+        title: "To Add text on a Picture",
+        text: [`You can add legible text on the picture as well. In the tool section, select the button <strong>A</strong>, type something 
+        in the <strong>Enter Text</strong> input and then you can use your cursor on the canvas
+        to add that text onto the image. Once you have the image how you like it, Save the image to return to the summary section.`],
+        // video: require('./videos/canvasType.mp4')
+      }
+    ],
+  }, 
+  {
+    topic: "Send to the Update",
+    id: "update",
+    intro: {
+      text: [`The main purpose of having these methods is to send the image, video, or file to the item it 
+      pertains to. To send the update, you must be in the summary section. Once you are, you can search for the 
+      name of your update, and as you're typing, it should bring down a list of items you could choose from to send an update to.
+      Once you click on the item's name, it should automatically send the update to your item.`, `If sending an image that 
+      was generated or uploaded, it may take some time to send to your item and may require a refresh to view the image that has been 
+      attached as an asset to your update. If your image included is hosted elsewhere, the image should be included in the text 
+      area of your update.`],
+      image: require('./img/update.jpg')
+    },
+    section: [
+      {
+        title: "Sending a generated or uploaded image",
+        text: [`Sending a generated or uploaded image will be uploaded into the assets of your item. 
+        Once the image is uploaded, check your item's update for the file. If you don't see it, the update may 
+        need a quick refresh.`],
+        video: require('./videos/updateGenerated.mp4')
+      },
+      {
+        title: "Sending an update with an image",
+        text: [`Sending in an update with an image that is hosted elsewhere will be included in your update without
+        uploading it into your assets.`],
+        video: require('./videos/updateImage.mp4')
+      },
+      {
+        title: "Sending an update with a video",
+        text: [`Sending in an update with a video that was created will be sent the same way as a generated image.
+        The only difference is that the upload may take longer.`, `NOTE: Please download your video to your local
+        hard drive before uploading as large video files may fail to upload.`],
+        video: require('./videos/updateVideo.mp4')
+      },
+      {
+        title: "Sending an update with a miscellaneous file",
+        text: [`You can also upload any file that Monday allows. Depending on the size of the file, it may take a while.`,
+         `Warning: The name of the file will be changed 
+        during the process.`],
+        video: require('./videos/updateMisc.mp4')
+      }
+    ],
+    outro: {
+      text: [`This is the very end and hope this has helped you in understanding how to use <strong>Item Visualizer</strong>. Thank you!`]
+    }
   }
 ];

@@ -1,19 +1,28 @@
 <template>
-    <TOC v-bind:toc="topics"/>
+<div>
+        <TOC v-bind:toc="content"/>
+    <Content v-bind:contents="content"/>
+</div>
+
 </template>
 
 <script>
 import TOC from './layout/TOC'
+import doc from '../assets/documentation.js'
+import Content from './layout/Content'
+
 export default {
     name: "How",
     components: {
-        TOC
+        TOC, Content
     },
     data() {
         return {
-                 topics: []   
+                 content: []   
         }
-
+    },
+    created() {
+        this.content = doc
     }
 }
 </script>
