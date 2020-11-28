@@ -16,16 +16,23 @@
       </div>
       VIDEO
     </div>
+
+  <About />
+
   </div>
 </template>
 
 <script>
+import About from '../components/layout/About'
 export default {
   name: "Home",
   data() {
     return {
       todos: [],
     };
+  },
+  components: {
+    About
   },
   methods: {
     deleteThatTodo(id) {
