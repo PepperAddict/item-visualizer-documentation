@@ -21,7 +21,11 @@ export default {
 </script>
 
 <style>
-
+.toc-container {
+        margin-bottom: 100px;
+    display: grid;
+    grid-template-rows: 50px 200px 50px 1fr;
+}
 .toc-buttons {
   list-style: none;
   display: grid;
