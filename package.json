@@ -2,6 +2,7 @@
   "name": "item-documentation",
   "version": "0.1.0",
   "private": true,
+  "homepage": "itemvisualizer.com",
   "scripts": {
     "deploy": "node scripts/gh-pages-deploy.js",
     "serve": "vue-cli-service serve",
