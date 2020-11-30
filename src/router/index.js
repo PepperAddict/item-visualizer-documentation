@@ -4,6 +4,7 @@ import Home from '../views/Home.vue'
 import Documentation from '../components/Documentation'
 import Privacy from '../components/Privacy'
 import Terms from '../components/Terms'
+import Contact from '../views/Contact'
 Vue.use(VueRouter)
 
 const routes = [
@@ -34,10 +35,16 @@ const routes = [
     path: '/terms',
     name: "Terms",
     component: Terms
+  }, 
+  {
+    path: '/contact',
+    name: "Contact",
+    component: Contact
   }
 ]
 
 const router = new VueRouter({
+  mode: 'history',
   routes
 })
 

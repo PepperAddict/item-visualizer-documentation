@@ -3,6 +3,7 @@
     <router-link to="/">Home</router-link>
 
     <router-link to="/how">How to Use</router-link>
+    <router-link to="/contact">Contact</router-link>
   </header>
 </template>
 
@@ -14,7 +15,19 @@ export default {
 
 <style scoped>
 header {
+display: flex;
+    grid-gap: 30px;
+    justify-content: flex-end;
+    padding: 20px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    position: sticky;
+    top: 0px;
+    background: white;
+    z-index: 2;
+}
 
-  color: white;
+header a {
+  text-transform: uppercase;
 }
 </style>

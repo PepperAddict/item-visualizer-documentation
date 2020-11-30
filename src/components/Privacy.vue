@@ -1,17 +1,14 @@
 <template>
-    <div>
+    <div class="term-policy">
         <h1>Privacy Policy for Item Visualizer</h1>
 
-<p>At Item Visualizer, accessible from Monday View App or itemvisualizer.app, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Item Visualizer and how we use it.</p>
-
-<p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
-
-
-
+<p>At Item Visualizer, accessible from Monday's view App or itemvisualizer.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by Item Visualizer and how we use it.</p>
+<p>Any data that is stored is through Monday and not Item Visualizer.</p>
+<p>If you have additional questions or require more information about our Privacy Policy, do not hesitate to <router-link to="/contact">contact us</router-link>.</p>
 
 <h2>Privacy Policies</h2>
 
-<P>You may consult this list to find the Privacy Policy for each of the advertising partners of Item Visualizer.</p>
+<p>You may consult this list to find the Privacy Policy for each of the advertising partners of Item Visualizer.</p>
 
 <p>Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on Item Visualizer, which are sent directly to users' browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.</p>
 
@@ -36,6 +33,9 @@
 <h2>Consent</h2>
 
 <p>By using our app and website, you hereby consent to our Privacy Policy and agree to its Terms and Conditions.</p>
+   
+       <p>Our Privacy Policy was created with the help of the <a href="https://www.privacypolicyonline.com/terms-conditions-generator/">Terms & Conditions Generator</a> and the <a href="https://www.generateprivacypolicy.com">Privacy Policy Generator</a>.</p>
+    
     </div>
 </template>
 
@@ -44,3 +44,14 @@ export default {
     name: "Privacy"
 }
 </script>
+
+<style>
+
+.term-policy {
+padding: 50px 0;
+
+}
+.term-policy h2 {
+    text-decoration: underline;
+}
+</style>

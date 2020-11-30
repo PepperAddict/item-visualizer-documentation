@@ -1,13 +1,16 @@
 <template>
   <div class="toc-container">
-    <h1>Item visualizer documentation</h1>
+    <h1 id="top">HOW TO USE</h1>
     <h2>
-      A guide to using this Monday View app to help explain your item better.
+      Here is a helpful guide with explanations, images, and videos to help get you started using Item Visualizer to help explain your item better.
     </h2>
     <p>Explore by Topic</p>
     <ul class="toc-buttons">
-      <li v-bind:key="i.id" v-for="i in toc">
-        <a v-bind:href="'#' + i.id">{{ i.topic }}</a>
+      <li @click="goto('how-to-use')">
+       How To Use
+      </li>
+      <li v-bind:key="i.id" v-for="i in toc" @click="goto(i.id)">
+        {{ i.topic }}
       </li>
     </ul>
   </div>
@@ -17,14 +20,26 @@
 export default {
   name: "TOC",
   props: ["toc"],
+  methods: {
+    goto(refName) {
+      let id = document.getElementById(refName)
+      id.scrollIntoView({behavior: 'smooth'})
+    }
+  }
 };
 </script>
 
 <style>
+
+.toc-container h2 {
+  color: #707070;
+  text-transform: none;
+}
 .toc-container {
-        margin-bottom: 100px;
-    display: grid;
-    grid-template-rows: 50px 200px 50px 1fr;
+  padding-top: 50px;
+  margin-bottom: 100px;
+  display: grid;
+  grid-template-rows: 50px 200px 50px 1fr;
 }
 .toc-buttons {
   list-style: none;
@@ -33,19 +48,30 @@ export default {
 }
 
 .toc-buttons li {
-    border: 1px solid #B2B2B2;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 10px;
+  border: 1px solid #b2b2b2;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
 }
+
+.toc-buttons li:hover {
+  background: #0085ff;
+transition: .2s;
+border: 1px solid #0085ff;
+}
+
 .toc-buttons li a {
-    width: 100%;
-    height: 100%;
-    display: block;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+.toc-buttons li:hover{
+  color: white;
 }
 
 a {
   text-decoration: none;
-  color: #0085FF;
+  color: #0085ff;
 }
 </style>

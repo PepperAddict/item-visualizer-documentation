@@ -1,10 +1,10 @@
 export default [
   {
-    topic: "installation",
+    topic: "Installation",
     id: "install",
     intro: {
       title: "Install the App",
-      text: [`This app is free to use on your Monday.com workspace view. 
+      text: ["First you need to be a member with <a href='https://www.monday.com'>Monday</a> to be able to use this app.", `This app is free to use on your Monday.com workspace view. 
             You can find the app by searching for <strong>Item Visualizer</strong>
             in the marketplace or you can simply click on the button.
             `,  `<a href="https://auth.monday.com/oauth2/authorize?client_id=c402136ecfc3e375135e5002cb9ebaa0&response_type=install"> <img alt="Add to monday.com" height="42" src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/uploads/Tal/4b5d9548-0598-436e-a5b6-9bc5f29ee1d9_Group12441.png" /> </a>`],
@@ -13,6 +13,7 @@ export default [
       {
         title: "Add the App",
         image: {src:require("./img/1.png"), alt:"How to Add the App step 1"},
+        video: {src: require('./videos/install.mp4'), alt: "Adding the View App"},
         text: [
           `Now that you have successfully installed the app, head 
             on over to the workspace of your choosing. Where it says <strong>Main Table</strong> with an arrow 
@@ -37,9 +38,10 @@ export default [
     },
   },
   {
-    topic: "Show the Website",
+    topic: "Show The Website",
     id: "show-the-website",
     intro: {
+      iframe: `<iframe width="560" height="315" src="https://www.youtube.com/embed/b_IXUVyQL4o" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
       image: {src: require("./img/3.png") , alt: "Show the Website"},
       text: [
         `This method let's you generate a screenshot of public websites
@@ -119,9 +121,10 @@ export default [
     },
   },
   {
-    topic: "Show the Idea",
+    topic: "Show The Idea",
     id: "show-the-idea",
     intro: {
+      iframe: `<iframe width="560" height="315" src="https://www.youtube.com/embed/q5DJc0kNPcs" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`,
       text: [
         `Have a prototype? Or an Idea? How do you show it?`,
         `This method will attach an image from something you may 
@@ -135,7 +138,7 @@ export default [
     },
   },
   {
-    topic: "Show the Idea > URL",
+    topic: "Show The Idea > URL",
     id: "show-the-idea-url",
     intro: {
       text: [
@@ -208,7 +211,7 @@ export default [
     ],
   },
   {
-    topic: "Show the Idea > Upload",
+    topic: "Show The Idea > Upload",
     id: "show-the-idea-upload",
     intro: {
       text: [
@@ -238,7 +241,7 @@ export default [
     ],
   },
   {
-    topic: "Show the Idea > Capture",
+    topic: "Show The Idea > Capture",
     id: "show-the-idea-capture",
     intro: {
       text: [
@@ -264,13 +267,14 @@ export default [
     ],
   },
   {
-    topic: "Show the Video",
+    topic: "Show The Video",
     id: "show-the-video",
     intro: {
       text: [
         `Sometimes images doesn't do the job and you need to send a video recording. There are two buttons to choose from: <strong>Camera</strong> and <strong>Screen</strong>.`,
       ],
-      image: {src: require("./img/showVid.png"), alt: "Show the Video"}
+      image: {src: require("./img/showVid.png"), alt: "Show the Video"},
+      iframe: `<iframe width="560" height="315" src="https://www.youtube.com/embed/LalyTRtJuWo" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`
     },
     section: [
       {
@@ -336,12 +340,12 @@ export default [
         in the <strong>Enter Text</strong> input and then you can use your cursor on the canvas
         to add that text onto the image. Once you have the image how you like it, Save the image to return to the summary section.`,
         ],
-        // video: {src: require('./videos/canvasType.mp4'), alt: "Video of how to Type on the image"}
+        video: {src: require('./videos/canvasType.mp4'), alt: "Video of how to Type on the image"}
       },
     ],
   },
   {
-    topic: "Send to the Update",
+    topic: "Send To The Update",
     id: "update",
     intro: {
       text: [
