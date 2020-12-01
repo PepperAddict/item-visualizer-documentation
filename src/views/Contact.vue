@@ -4,10 +4,10 @@
     
 
     <h3>
-        Item Visualizer a Monday view app was created by Jenearly Ang and Yenith LianTyHao. 
+        Item Visualizer, a Monday's view app was created by Jenearly Ang and Yenith LianTyHao. 
     </h3>
     <p>
-        <strong>Install</strong>: If you came here for the install link you can click on 
+        <strong>Install</strong>: If you came here for the install link, you can click on 
         the button below: 
 <br />
         <a
@@ -21,13 +21,13 @@
         </a>
         <br />
 
-        or if you are only interested in the app's URL <pre>https://auth.monday.com/oauth2/authorize?client_id=c402136ecfc3e375135e5002cb9ebaa0&response_type=install</pre>
+        <pre>https://auth.monday.com/oauth2/authorize?client_id=c402136ecfc3e375135e5002cb9ebaa0&response_type=install</pre>
     </p>
 
     <p>
-        <strong>Contact</strong>: If you have any questions or suggestions or anything else in particular, 
-        please don't hesitate to contact me directly: <a href="mailto:jenearly@gmail.com?subject=Message About Visualizer">jenearly@gmail.com</a> and 
-        I will try to get back to you as soon as possible.
+        <strong>Contact</strong>: If you have any questions or suggestions, 
+        please don't hesitate to email me directly: <a href="mailto:jenearly@gmail.com?subject=Message About Visualizer">jenearly@gmail.com</a> and 
+        I will get back to you within 2 days.
     </p>
 
     <p>
@@ -36,10 +36,8 @@
     </p>
 
 <p>
-    <strong>Donate</strong> If you came here to donate to show your appreciation or want to continue to see this Monday View app 
+    <strong>Donate</strong> If you came here to donate to show your appreciation or want to continue to see this Monday's view app 
     grow, feel free to send it via paypal to jenearly@gmail.com or click the button below
-
-
 </p>
         <form action="https://www.paypal.com/donate" method="post" target="_top">
 <input type="hidden" name="hosted_button_id" value="NV7BFS5M8FY3S" />
@@ -53,9 +51,9 @@
 
 <style scoped>
 .contact {
-    padding: 100px 0px;
+  padding: 100px 0px;
 }
 .contact p {
-    padding-top: 30px;
+  padding-top: 30px;
 }
 </style>

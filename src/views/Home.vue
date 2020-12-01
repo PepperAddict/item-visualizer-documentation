@@ -2,9 +2,9 @@
   <div id="app">
     <div class="home-container">
       <div class="text-container">
-        <h1>Item Visualizer</h1>
-        <h3>A Monday's View App</h3>
-        <h2>Help your team understand your item with a visual explanation.</h2>
+        <h1>Design Better.  Together. Fast.</h1>
+        <h2>A Monday's View App that Helps Teams Design and Develop Faster. Together.</h2>
+        <h3>Want to try it out?  Get the App:</h3>
         <a
           href="https://auth.monday.com/oauth2/authorize?client_id=c402136ecfc3e375135e5002cb9ebaa0&response_type=install"
         >
@@ -15,7 +15,7 @@
           />
         </a>
         <p class="note">
-          This app requires you to already have an account with <a href="https://monday.com/" target="_blank"> Monday.com </a>
+          This app requires you to have an account with <a href="https://monday.com/" target="_blank"> Monday.com </a>
         </p>
       </div>
       <iframe width="560" height="315" src="https://www.youtube.com/embed/9CP0eiwuVIc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
@@ -56,15 +56,22 @@ export default {
 
 <style scoped>
 h1 {
-  text-transform: uppercase;
+  color:#0A253A;
+  font-family: 'Poppins', sans-serif;
+  font-size:52px;
+  line-height:52px;
 }
 h2 {
   text-transform: none;
-  color: #707070;
+  color: #0A253A;
+  text-align:left;
+  font-family: 'Open Sans', sans-serif;
 }
 h3 {
   font-size: 1rem;
-  text-align: right;
+  text-transform: uppercase;
+  text-align: left;
+  color:#5A88AA;
 }
 
 .home-container {
@@ -79,10 +86,10 @@ button {
   color: white;
 }
 .note {
-  border: 1px solid #ccc;
-  padding: 10px;
-  font-size: .8rem;
-  text-align: center;
-  line-height: 1rem;
+ line-height:1.2;
+ font-size:12px;
+ color:#0A253A;
+ font-family:'Open Sans', sans-serif;
 }
+
 </style>

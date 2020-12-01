@@ -5,13 +5,15 @@ import Documentation from '../components/Documentation'
 import Privacy from '../components/Privacy'
 import Terms from '../components/Terms'
 import Contact from '../views/Contact'
+import Methods from '../components/layout/Methods'
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
     name: 'Home',
-    component: Home
+    component: Home,
+    props: true
   },
   {
     path: '/about',
@@ -40,6 +42,12 @@ const routes = [
     path: '/contact',
     name: "Contact",
     component: Contact
+  },
+  {
+    path: '/methods',
+    name: "Methods",
+    component: Methods,
+    props: true
   }
 ]
 
