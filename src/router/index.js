@@ -6,6 +6,7 @@ import Privacy from '../components/Privacy'
 import Terms from '../components/Terms'
 import Contact from '../views/Contact'
 import Methods from '../components/layout/Methods'
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -54,7 +55,10 @@ const routes = [
 const router = new VueRouter({
   routes,
   linkActiveClass: "active",
-  linkExactActiveClass: "active"
+  linkExactActiveClass: "active",
+  scrollBehavior() {
+    document.getElementById('app').scrollIntoView()
+  }
 })
 
 export default router
