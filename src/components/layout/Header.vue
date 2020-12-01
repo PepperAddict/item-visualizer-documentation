@@ -1,5 +1,8 @@
 <template>
   <header class="header">
+    <span class="logo">
+      <img v-bind:src="logo" alt="logo" />
+    </span>
     <router-link to="/" active-class exact>Home</router-link>
     <router-link to="/methods" active-class>Methods</router-link>
     <router-link to="/how" active-class>How to Use</router-link>
@@ -8,15 +11,30 @@
 </template>
 
 <script>
+import logo from "../../assets/logo.svg";
 export default {
   name: "Header",
+  data() {
+    return {
+      logo,
+    };
+  },
 };
 </script>
 
 <style scoped>
+.logo {
+  position: absolute;
+  left: 0px;
+  width: 50px;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+}
 .active {
-  color: #0085FF;
-  border-bottom: 5px solid #0085FF;
+  color: #0085ff;
+  border-bottom: 5px solid #0085ff;
 }
 header {
   display: flex;
@@ -38,6 +56,6 @@ header a {
   transition: 0.5s;
 }
 header a:hover {
-  color: #0085FF;
+  color: #0085ff;
 }
 </style>

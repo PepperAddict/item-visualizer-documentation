@@ -7,6 +7,7 @@ import Terms from '../components/Terms'
 import Contact from '../views/Contact'
 import Methods from '../components/layout/Methods'
 
+
 Vue.use(VueRouter)
 
 const routes = [
