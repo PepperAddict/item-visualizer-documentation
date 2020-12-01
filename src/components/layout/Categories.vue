@@ -28,22 +28,21 @@
       />
     </div>
 
-  <Section v-bind:key="index" v-bind:section="section" v-for="(section, index) in cat.section"/>
-
-
-
+    <Section
+      v-bind:key="index"
+      v-bind:section="section"
+      v-for="(section, index) in cat.section"
+    />
   </div>
 </template>
 
 <script>
-
-import Section from './Section'
+import Section from "./Section";
 export default {
   name: "Categories",
-  props: ['cat'],
+  props: ["cat"],
   components: {
-    Section
-  }
-
+    Section,
+  },
 };
 </script>

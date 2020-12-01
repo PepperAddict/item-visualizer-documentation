@@ -43,3 +43,15 @@ export default {
   props: ["content"],
 };
 </script>
+
+<style scoped>
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+.intro img {
+  width: 100%;
+  object-fit: contain;
+}
+</style>
