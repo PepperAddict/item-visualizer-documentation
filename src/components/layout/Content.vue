@@ -99,7 +99,7 @@ h2 {
 }
 
 h3 {
-  text-transform: capitalize;
+
   color: gray;
 }
 img,
