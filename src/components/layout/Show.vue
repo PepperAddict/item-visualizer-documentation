@@ -1,19 +1,7 @@
 <template>
   <div class="section-container">
-    <h2>{{ web.topic }}</h2>
-    <div class="intro">
-      <div class="intro-text">
-        <p
-          v-bind:key="index"
-          v-for="(text, index) in web.intro.text"
-          v-html="text"
-        >
-          {{ text }}
-        </p>
-      </div>
 
-      <div v-html="web.intro.iframe"></div>
-    </div>
+    <IntroSection v-bind:content="web" />
 
     <Categories
       v-bind:key="key"
@@ -25,13 +13,18 @@
       v-bind:section="section"
       v-for="(section, index) in web.section"
     />
-    
-    <List v-bind:key="index" v-bind:lists="section.list" v-for="(section, index) in web.section"/>
 
-    <Gallery v-bind:key="index" v-bind:section="section" v-for="(section, index) in web.section"
-     />
+    <List
+      v-bind:key="index"
+      v-bind:lists="section.list"
+      v-for="(section, index) in web.section"
+    />
 
-
+    <Gallery
+      v-bind:key="index"
+      v-bind:section="section"
+      v-for="(section, index) in web.section"
+    />
   </div>
 </template>
 
@@ -41,10 +34,11 @@ import Categories from "../layout/Categories";
 import List from "../layout/List";
 import Gallery from "../layout/Gallery";
 import Sections from "../layout/Section";
+import IntroSection from "../layout/IntroSection";
 
 export default {
   name: "The Method",
-  components: { Categories, List, Gallery, Sections },
+  components: { Categories, List, Gallery, Sections, IntroSection },
   props: {
     vari: String,
   },
@@ -77,5 +71,14 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
+.intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+.intro img {
+  width: 100%;
+  object-fit: contain;
+}
 </style>

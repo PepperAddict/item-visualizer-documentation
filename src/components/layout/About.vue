@@ -2,42 +2,39 @@
   <div class="about">
     <h2>How it Works</h2>
     <h3>
-      Item Visualizer is a free tool for Monday's View to help explain your item
-      without the need of separate tools and services. To achieve that, we offer
-      3 different methods to choose from.
+      Item Visualizer is a FREE app for Monday's View to help explain your
+      designs and ideas without the need of separate tools and services. There
+      are 3 ways:
     </h3>
 
     <div class="three-column">
       <router-link :to="{ name: 'Methods', params: { whichOne: 'web' } }">
         <div class="method">
-          <h4>Show the Website</h4>
+          <h4>Screenshot & Markups</h4>
           <span class="round-img">
             <img v-bind:src="website" />
           </span>
 
-          <p>
-            This tool will help generate an image of the public website in
-            different viewports such as Desktop, Tablet, and Mobile.
-          </p>
+          <p>Generate a screenshot of a website and add markups</p>
 
-          Learn More
+          <p class="learn-more">Learn More</p>
         </div>
       </router-link>
 
       <router-link :to="{ name: 'Methods', params: { whichOne: 'idea' } }">
         <div class="method">
-          <h4>Show the Idea</h4>
+          <h4>Share Your Ideas</h4>
           <span class="round-img">
             <img v-bind:src="idea" />
           </span>
 
           <p>
             This tool will let you bring in what you may already have. Whether
-            it is a file, prototype, pasted image, or what is going on around
-            you, you can use this tool to access it.
+            Import your idea, showcase your prototype and more into Monday.
           </p>
+          <p class="learn-more">Learn More</p>
 
-          Learn More
+          <span style="color: #"></span>
         </div>
       </router-link>
 
@@ -53,7 +50,7 @@
             your camera or your screen.
           </p>
 
-          Learn More
+          <p class="learn-more">Learn More</p>
         </div>
       </router-link>
     </div>
@@ -80,6 +77,11 @@ export default {
 <style scoped>
 .about {
   height: 100vh;
+}
+.learn-more {
+  padding: 0px;
+  margin: 0px;
+  font-weight: 600;
 }
 .three-column div {
   display: grid;

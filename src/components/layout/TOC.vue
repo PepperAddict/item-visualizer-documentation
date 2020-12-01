@@ -4,7 +4,7 @@
     <h2>
       Here is a helpful guide with explanations, images, and videos to help get you started using Item Visualizer to help explain your item better.
     </h2>
-    <p>Explore by Topic</p>
+    <h3>Explore by Topic</h3>
     <ul class="toc-buttons">
       <li @click="goto('how-to-use')">
        How To Use
@@ -39,7 +39,7 @@ export default {
   padding-top: 50px;
   margin-bottom: 100px;
   display: grid;
-  grid-template-rows: 50px 200px 50px 1fr;
+  grid-template-rows: auto 200px 50px 1fr;
 }
 .toc-buttons {
   list-style: none;

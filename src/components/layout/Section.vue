@@ -1,9 +1,8 @@
 <template>
-
-    <section class="section">
-
+  <section>
+    <h3 v-if="section['title'] !== undefined">{{ section.title }}</h3>
+    <div class="section-container">
       <div class="text-area">
-        <h3 v-if="section['title'] !== undefined">{{ section.title }}</h3>
         <p
           v-bind:key="index"
           v-html="text"
@@ -23,6 +22,9 @@
         controls
         v-if="section['video'] !== undefined"
         v-bind:src="section.video.src"
+        loop
+        muted
+        autoplay
         type="video/mp4"
       />
       <a
@@ -31,22 +33,26 @@
         v-if="section['video'] === undefined && section['image'] !== undefined"
         ><img v-bind:src="section.image.src"
       /></a>
-    </section>
-
+    </div>
+  </section>
 </template>
 
 <script>
 export default {
   name: "Section",
-  props: ['section']
+  props: ["section"],
 };
 </script>
 
 <style scoped>
-section {
-  padding: 50px 0px;
+.section-container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
 }
+section p {
+  max-width: 800px;
+}
+
+
 </style>

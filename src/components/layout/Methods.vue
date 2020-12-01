@@ -1,10 +1,10 @@
 <template>
   <div class="methods-container">
-    <h2>Methods</h2>
-    <h3>
+    <h1>Methods</h1>
+    <h2>
       Item Visualizer offers three different methods to choose from. Click on
       one to learn more.
-    </h3>
+    </h2>
 
     <div class="metho-container">
       <div

@@ -1,11 +1,10 @@
 <template>
 <div class="contact">
     <h1>Get In Touch</h1>
-    
-
-    <h3>
+    <h2>
         Item Visualizer, a Monday's view app was created by Jenearly Ang and Yenith LianTyHao. 
-    </h3>
+    </h2>
+
     <p>
         <strong>Install</strong>: If you came here for the install link, you can click on 
         the button below: 

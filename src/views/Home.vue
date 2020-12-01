@@ -40,21 +40,11 @@ export default {
   components: {
     About, Credit
   },
-  methods: {
-    deleteThatTodo(id) {
-      this.todos = this.todos.filter((todo) => todo.id !== id);
-    },
-    addTodo(newTodo) {
-      // const {title, completed} = newTodo;
-
-      this.todos = [...this.todos, newTodo];
-    },
-  },
   created() {},
 };
 </script>
 
-<style scoped>
+<style>
 h1 {
   color:#0A253A;
   font-family: 'Poppins', sans-serif;
@@ -80,6 +70,8 @@ h3 {
     grid-gap: 50px;
     padding: 100px 0;
     box-sizing: border-box;
+    align-content: center;
+    align-items: center;
 }
 button {
   background: black;
@@ -90,6 +82,18 @@ button {
  font-size:12px;
  color:#0A253A;
  font-family:'Open Sans', sans-serif;
+}
+div {
+  margin: auto;
+  max-width: 1000px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2rem;
+}
+
+img,
+video {
+  max-width: 300px;
+  max-height: 600px;
 }
 
 </style>
