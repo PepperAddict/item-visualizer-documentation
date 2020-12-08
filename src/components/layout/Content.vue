@@ -13,26 +13,26 @@
 
 
       <Sections
-        v-bind:key="key"
+        v-bind:key="four"
         v-bind:section="section"
-        v-for="(section, key) in content.section"
+        v-for="(section, val, four) in content.section"
       />
       <Categories
-        v-bind:key="key"
+        v-bind:key="three"
         v-bind:cat="cat"
-        v-for="(cat, key) in content.categories"
+        v-for="(cat, val, three) in content.categories"
       />
 
       <List
-        v-bind:key="index"
+        v-bind:key="two"
         v-bind:lists="section.list"
-        v-for="(section, index) in content.section"
+        v-for="(section, val, two) in content.section"
       />
 
       <Gallery
         v-bind:section="section"
-        v-bind:key="index"
-        v-for="(section, index) in content.section"
+        v-bind:key="one"
+        v-for="(section, val, one) in content.section"
       />
 
       <div class="outro"></div>
@@ -62,13 +62,20 @@ export default {
 };
 </script>
 
-<style scoped>
-h2 {
-  text-transform: uppercase;
+<style>
+.section-container {
+  padding-top: 100px;
+}
+div {
+  margin: auto;
+  max-width: 1000px;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 2rem;
 }
 
-.text-area {
-  height: 100%;
+img,
+video {
+  max-width: 300px;
+  max-height: 600px;
 }
-
 </style>

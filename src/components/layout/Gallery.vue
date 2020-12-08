@@ -26,9 +26,7 @@
 export default {
   name: "Gallery",
   props: ["section"],
-  created() {
-    console.log(this.$props);
-  },
+
 };
 </script>
 

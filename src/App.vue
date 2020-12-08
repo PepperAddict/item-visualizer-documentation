@@ -16,9 +16,4 @@ export default {
   components: {Header, Footer}
 }
 </script>
-<style>
-button {
-  background: black;
-  color: white;
-}
-</style>
+

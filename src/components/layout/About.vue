@@ -1,7 +1,7 @@
 <template>
   <div class="about">
     <h2>How it Works</h2>
-    <h3>
+    <h3 class="tagline">
       Item Visualizer is a FREE app for Monday's View to help explain your
       designs and ideas without the need of separate tools and services. There
       are 3 ways:
@@ -82,6 +82,7 @@ export default {
   padding: 0px;
   margin: 0px;
   font-weight: 600;
+  color:#0085ff;
 }
 .three-column div {
   display: grid;
@@ -116,7 +117,7 @@ h2 {
   text-align: left;
   font-family: "Open Sans", sans-serif;
 }
-h3 {
+.tagline {
   font-size: 1rem;
   text-align: left;
   color: #0a253a;

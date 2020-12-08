@@ -51,6 +51,61 @@ export default [
     },
   },
   {
+    topic: "Initializing the Camera and Microphone",
+    id: "initialize",
+    intro: {
+      text: [
+        `Some of the features require the user to give access to the camera and microphone.`,
+        `The prompt will ask for your permission, and 
+      if rejected, there is still a chance to give access.`,
+      
+      ],
+      image: {src: require('./img/initiateVid.jpg'), alt: "Activate to use these features"}
+    },
+    section: [
+      {
+        title: "Give Access",
+        text: [
+          `Some features require only your microphone or camera while another may require both your microphone and camera. 
+      You may need to check if Camera and/or microphone is blocked.`,
+        ],
+        list: [
+          {
+            text: `First prompt will look like the image below with Chrome. Please press <strong>allow</strong> to grant this app access.`,
+            image: {
+              src: require("./img/initiateVid1.jpg"),
+              alt: "Allow Camera and Microphone with Chrome",
+            },
+          },
+          {
+            text: `If it never gave you a prompt or you declined to give access for chrome, you may receive an error about not giving access to the app. There's still 
+            a chance which is at the end of the address bar.`,
+            image: {
+              src: require("./img/initiateVid2.jpg"),
+              alt: "Second Chance to Give Access from Chrome",
+            },
+          },
+          {
+            text: `First prompt will look like the image below for Firefox. Please check <strong>Remember this decision</strong> and press <strong>allow</strong> to grant this app access.`,
+            image: {
+              src: require("./img/initiateVid3.jpg"),
+              alt: "Allow Camera and Microphone with Firefox",
+            },
+          },
+          {
+            text: `If it never gave you a prompt or you declined to give access for Firefox, you can head on over to your 
+          address bar click the camera and microphone to remove your blocks and try again.`,
+            image: {
+              src: require("./img/initiateVid4.jpg"),
+              alt: "Second Chance to Give Access from Firefox",
+            },
+          },
+
+        ],
+      },
+    ],
+  },
+  {
     topic: "Show The Website",
     id: "show-the-website",
     intro: {
