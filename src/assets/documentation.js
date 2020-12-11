@@ -106,6 +106,37 @@ export default [
     ],
   },
   {
+    topic: "Using Your Media Keys",
+    id: "media-keys",
+    intro: {
+      text: [
+        `This app supports the play and pause media keys on your keyboard for video elements on our app.`,
+        `The media keys are different depending on the keyboard, so make sure you get the correct one.`
+      ],
+      image: {src: "https://deskthority.net/wiki/images/0/01/Logitech_Y-RJ20_--_audio_control_panel.jpg", alt: "Image of a keyboard"}
+    },
+    section: [
+      {
+        title: "Using it for capturing a screenshot",
+        text: [
+          `You can access the media keys with Show The Idea > Capture`,
+          `To work with users that are unable to press the capture button,
+          you can use your media key (play or pause) to initiate a capture.`
+        ],
+        video: {src: require('./videos/keypress.mp4'), alt: "Capturing screenshot"}
+      },
+      {
+        title: "Use it for ending your recording",
+        text: [
+          `You can access the media keys with Show the Video`,
+          `Once you have already started recording, instead of pressing the stop recording
+          button, you can use your media key (play or pause) instead.`
+        ]
+      }
+    ]
+  },
+
+  {
     topic: "Show The Website",
     id: "show-the-website",
     intro: {
