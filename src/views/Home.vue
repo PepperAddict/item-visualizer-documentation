@@ -4,7 +4,7 @@
       <div class="text-container">
         <h1>Design Better. Together. Fast.</h1>
         <h2>
-          A Monday's View App that Helps Teams Design and Develop Faster.
+          A monday.com's View App that Helps Teams Design and Develop Faster.
           Together.
         </h2>
         <h3>Want to try it out? Get the App:</h3>

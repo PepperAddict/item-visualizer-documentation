@@ -2,7 +2,7 @@
 <div class="contact">
     <h1>Get In Touch</h1>
     <h2>
-        Item Visualizer, a Monday's view app was created by Jenearly Ang and Yenith LianTyHao. 
+        Item Visualizer, a monday.com's view app was created by Jenearly Ang and Yenith LianTyHao. 
     </h2>
 
     <p>
