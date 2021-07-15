@@ -1,4 +1,6 @@
 <template>
+<div>
+  <Header />
   <div class="methods-container">
     <h1>Methods</h1>
     <h2>
@@ -47,9 +49,13 @@
         </div>
     </div>
   </div>
+  <Footer />
+  </div>
 </template>
 
 <script>
+import Footer from "./Footer";
+import Header from "./Header";
 const website = require("../../assets/img/web.svg");
 const idea = require("../../assets/img/bulb.svg");
 const video = require("../../assets/img/record.svg");
@@ -72,7 +78,9 @@ export default {
     },
   },
   components: {
-    Web
+    Web,
+    Header, 
+    Footer
   },
   created() {
       if (this.$attrs.whichOne) {

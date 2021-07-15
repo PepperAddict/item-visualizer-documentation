@@ -9,9 +9,6 @@
     >
     <IntroSection v-bind:content="content"/>
     
-
-
-
       <Sections
         v-bind:key="four"
         v-bind:section="section"
@@ -64,7 +61,9 @@ export default {
 
 <style>
 .section-container {
-  padding-top: 100px;
+  border: 1px solid #ccc;
+  margin: 10px;
+  padding: 15px;
 }
 div {
   margin: auto;

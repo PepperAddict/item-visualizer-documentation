@@ -6,6 +6,7 @@ import Privacy from '../components/Privacy'
 import Terms from '../components/Terms'
 import Contact from '../views/Contact'
 import Methods from '../components/layout/Methods'
+import DocumentationClear from '../views/DocuClear'
 
 
 Vue.use(VueRouter)
@@ -50,6 +51,11 @@ const routes = [
     name: "Methods",
     component: Methods,
     props: true
+  }, 
+  {
+    path: "/documentation",
+    name: "documentation",
+    component: DocumentationClear
   }
 ]
 

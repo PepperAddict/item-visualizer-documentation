@@ -1,5 +1,8 @@
 <template>
+<div>
+  <Header />  
 <div class="contact">
+
     <h1>Get In Touch</h1>
     <h2>
         Item Visualizer, a monday.com's view app was created by Jenearly Ang and Yenith LianTyHao. 
@@ -46,7 +49,22 @@
 
 
 </div>
+<Footer />
+</div>
 </template>
+
+<script>
+import Footer from '../components/layout/Footer'
+import Header from '../components/layout/Header'
+
+export default {
+  name: "Contact",
+  components: {
+    Footer, 
+    Header
+  }
+}
+</script>
 
 <style scoped>
 .contact {

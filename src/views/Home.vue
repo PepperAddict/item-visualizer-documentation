@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Header />
     <div class="home-container">
       <div class="text-container">
         <h1>Design Better. Together. Fast.</h1>
@@ -33,10 +34,14 @@
     </div>
     <About />
     <Credit />
+    <Footer />
   </div>
 </template>
 
 <script>
+import Footer from '../components/layout/Footer'
+import Header from '../components/layout/Header'
+
 import About from "../components/layout/About";
 import Credit from "../components/layout/Credit";
 export default {
@@ -49,6 +54,8 @@ export default {
   components: {
     About,
     Credit,
+    Footer, 
+    Header
   },
   created() {},
 };

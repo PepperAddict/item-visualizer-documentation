@@ -7,8 +7,8 @@ export default [
       text: [
         "First you need to be a member with <a href='https://www.monday.com'>Monday</a> to be able to use this app.",
         `This app is free to use on your Monday.com workspace view. 
-            You can find the app by searching for <strong>Item Visualizer</strong>
-            in the marketplace or you can simply click on the button.
+            You can find the app here: <a href="https://monday.com/marketplace/105">Item Visualizer on Monday.com Marketplace</a>
+            or you can simply click on the button below to install it directly.
             `,
         `<a href="https://auth.monday.com/oauth2/authorize?client_id=c402136ecfc3e375135e5002cb9ebaa0&response_type=install"> <img alt="Add to monday.com" height="42" src="https://dapulse-res.cloudinary.com/image/upload/f_auto,q_auto/remote_mondaycom_static/uploads/Tal/4b5d9548-0598-436e-a5b6-9bc5f29ee1d9_Group12441.png" /> </a>`,
       ],
