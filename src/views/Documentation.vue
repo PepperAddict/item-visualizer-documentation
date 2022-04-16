@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import Footer from '../components/layout/Footer'
-import Header from '../components/layout/Header'
+import Footer from "../components/layout/Footer";
+import Header from "../components/layout/Header";
 
 import TOC from "../components/layout/TOC";
 import doc from "../assets/documentation.js";
@@ -20,8 +20,8 @@ export default {
   components: {
     TOC,
     Content,
-    Footer, 
-    Header
+    Footer,
+    Header,
   },
   data() {
     return {
